@@ -18,4 +18,9 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url('^user/', include('apps.df_user')),
+    url('^cart/', include('apps.df_shop_cart')),
+    url('^order/', include('apps.df_order')),
+    url('^', include('apps.df_goods'))
 ]
+
